@@ -1,7 +1,9 @@
 package com.virtualpairprogrammers.staffmanagement;
 
+import com.virtualpairprogrammers.dataaccess.EmployeeDataAccess;
 import com.virtualpairprogrammers.dataaccess.EmployeeDataAccessImplementation;
 import com.virtualpairprogrammers.dataaccess.EmployeeNotFoundException;
+import com.virtualpairprogrammers.dataaccess.ProductionDao;
 import com.virtualpairprogrammers.staffmanagement.domain.Employee;
 
 import javax.annotation.Resource;
@@ -20,7 +22,8 @@ public class EmployeeManagementImplementation
 
     // Java EE >= 5 => DI container
     @Inject
-    private EmployeeDataAccessImplementation dao;
+    @ProductionDao
+    private EmployeeDataAccess dao;
 
     @EJB
     private ExternalPayrollSystem payrollSystem;

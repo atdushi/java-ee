@@ -14,26 +14,31 @@ import com.virtualpairprogrammers.staffmanagement.domain.Employee;
 
 // Java EE > 5 => можно без интерфейса для @Local EJB
 //@Stateless => можно не делать из него EJB
-public class EmployeeDataAccessImplementation
-{
+
+@ProductionDao
+public class EmployeeDataAccessImplementation implements EmployeeDataAccess {
 	@PersistenceContext
 	private EntityManager em;
 
+	@Override
 	public List<Employee> findAll() {
 		Query q = em.createQuery("select employee from Employee employee");
 		return q.getResultList();
 	}
 
+	@Override
 	public List<Employee> findBySurname(String surname) {
 		Query q = em.createQuery("select employee from Employee employee where employee.surname = :surname");
 		q.setParameter("surname", surname);
 		return q.getResultList();
 	}
 
+	@Override
 	public void insert(Employee newEmployee) {
 		em.persist(newEmployee);
 	}
 
+	@Override
 	public Employee findById(int id) throws EmployeeNotFoundException{
 		Employee employee = em.find(Employee.class, id);
 		if (employee == null)
@@ -44,6 +49,7 @@ public class EmployeeDataAccessImplementation
 		return employee;
 	}
 
+	@Override
 	public void deleteById(int id) throws EmployeeNotFoundException {
 		Employee foundEmployee = findById(id);
 		em.remove(foundEmployee);
