@@ -52,5 +52,14 @@
     </orderEntry>
     <orderEntry type="library" name="jersey" level="project" />
     <orderEntry type="library" name="security-ee" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/javalibs/glassfish5/glassfish/modules/cdi-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

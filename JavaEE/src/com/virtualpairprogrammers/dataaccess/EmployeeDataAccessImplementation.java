@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
+import javax.enterprise.inject.Alternative;
+import javax.enterprise.inject.Default;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -11,7 +13,7 @@ import javax.persistence.Query;
 import com.virtualpairprogrammers.staffmanagement.domain.Employee;
 
 // Java EE > 5 => можно без интерфейса для @Local EJB
-@Stateless
+//@Stateless => можно не делать из него EJB
 public class EmployeeDataAccessImplementation
 {
 	@PersistenceContext

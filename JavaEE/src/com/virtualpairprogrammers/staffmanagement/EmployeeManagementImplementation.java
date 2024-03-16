@@ -7,6 +7,7 @@ import com.virtualpairprogrammers.staffmanagement.domain.Employee;
 import javax.annotation.Resource;
 import javax.annotation.security.RolesAllowed;
 import javax.ejb.*;
+import javax.inject.Inject;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import java.util.List;
@@ -18,7 +19,7 @@ public class EmployeeManagementImplementation
         implements EmployeeManagementServiceRemote, EmployeeManagementServiceLocal {
 
     // Java EE >= 5 => DI container
-    @EJB
+    @Inject
     private EmployeeDataAccessImplementation dao;
 
     @EJB

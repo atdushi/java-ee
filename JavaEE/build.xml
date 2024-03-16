@@ -26,6 +26,7 @@
         <fileset dir="${glassfish_libs}">
             <include name="**/javax*.jar"/>
             <include name="security-ee.jar"/>
+            <include name="cdi-api.jar"/>
             <include name="**/javax.annotation-api.jar"/>
 
             <!-- glassfish 5 -->
@@ -81,6 +82,7 @@
         <jar destfile="${jarfile}" basedir="${bin}">
             <metainf dir="${src}/META-INF">
                 <include name="persistence.xml"/>
+                <include name="beans.xml"/>
             </metainf>
         </jar>
 
@@ -92,6 +94,7 @@
         <copy todir="${bin}">
             <fileset dir="${src}">
                 <include name="**/persistence.xml"/>
+                <include name="**/beans.xml"/>
             </fileset>
         </copy>
         <delete file="${warfile}"/>
