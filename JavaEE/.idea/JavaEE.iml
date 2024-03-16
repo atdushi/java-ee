@@ -30,9 +30,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="lib" level="project" />
-    <orderEntry type="library" exported="" name="javax" level="project" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="javax" level="project" />
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://C:/javalibs/glassfish5/glassfish/modules/gf-client-module.jar!/" />
@@ -41,7 +41,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://C:/javalibs/db-derby-10.6.2.1-bin/lib/derbyclient.jar!/" />
@@ -50,7 +50,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="jersey" level="project" />
-    <orderEntry type="library" exported="" name="security-ee" level="project" />
+    <orderEntry type="library" name="jersey" level="project" />
+    <orderEntry type="library" name="security-ee" level="project" />
   </component>
 </module>

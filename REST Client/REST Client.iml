@@ -7,9 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="javax" level="project" />
-    <orderEntry type="library" exported="" name="jersey-full" level="project" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="library" name="javax" level="project" />
+    <orderEntry type="library" name="jersey-full" level="project" />
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jsonp-jaxrs.jar!/" />
