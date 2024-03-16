@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jersey">
+    <CLASSES>
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-client.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-common.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-container-servlet-core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

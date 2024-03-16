@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="javax">
+    <CLASSES>
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.batch-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.ejb-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.el.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.enterprise.concurrent-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.enterprise.concurrent.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.enterprise.deploy-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.faces.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.inject.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.interceptor-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.jms-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.json.bind-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.json.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.mail.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.management.j2ee-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.persistence.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.resource-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.security.auth.message-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.security.enterprise-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.security.enterprise.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.security.jacc-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.servlet-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.servlet.jsp-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.servlet.jsp.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.servlet.jsp.jstl-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.transaction-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.websocket-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.ws.rs-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.xml.registry-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/javax.xml.rpc-api.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/endorsed/javax.annotation-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

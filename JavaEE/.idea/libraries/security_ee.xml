@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="security-ee">
+    <CLASSES>
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/security-ee.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.prime.com.tr/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <title>All Employees</title>
+</h:head>
+
+<h:body>
+    <h1>All Employees</h1>
+
+    <h:form>
+        <h:dataTable value="#{allEmployeesPageBean.allEmployees}"
+                     var="employee"
+                     binding="#{allEmployeesPageBean.dataTableOld}">
+            <h:column>
+                <f:facet name="header">First Name</f:facet>
+                <h:commandLink action="#{allEmployeesPageBean.showEmployeeOld}">
+                    #{employee.firstName}
+                </h:commandLink>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Surname</f:facet>
+                #{employee.surname}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Jobrole</f:facet>
+                #{employee.jobRole}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Salary</f:facet>
+                #{employee.salary}
+            </h:column>
+        </h:dataTable>
+
+        <p:dataTable value="#{allEmployeesPageBean.allEmployees}"
+                     var="employee"
+                     binding="#{allEmployeesPageBean.dataTable}">
+
+            <p:column>
+                <f:facet name="header">First Name</f:facet>
+                <f:facet name="footer">First Name</f:facet>
+                <h:commandLink action="#{allEmployeesPageBean.showEmployee}">
+                    #{employee.firstName}
+                </h:commandLink>
+            </p:column>
+
+            <p:column>
+                <f:facet name="header">Surname</f:facet>
+                <f:facet name="footer">Surname</f:facet>
+                #{employee.surname}
+            </p:column>
+
+            <p:column>
+                <f:facet name="header">Jobrole</f:facet>
+                <f:facet name="footer">Jobrole</f:facet>
+                #{employee.jobRole}
+            </p:column>
+
+            <p:column>
+                <f:facet name="header">Salary</f:facet>
+                <f:facet name="footer">Salary</f:facet>
+                #{employee.salary}
+            </p:column>
+        </p:dataTable>
+
+    </h:form>
+
+    <ui:repeat value="#{allEmployeesPageBean.allEmployees}" var="value">
+        #{value} <br/>
+    </ui:repeat>
+
+</h:body>
+</html>

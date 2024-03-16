@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="jersey-full">
+    <CLASSES>
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-bean-validation.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-cdi1x-servlet.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-cdi1x-transaction.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-cdi1x.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-client.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-common.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-container-grizzly2-http.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-container-servlet-core.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-container-servlet.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-entity-filtering.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-gf-ejb.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-hk2.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-media-jaxb.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-media-json-binding.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-media-json-jackson.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-media-json-jettison.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-media-json-processing.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-media-moxy.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-media-multipart.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-media-sse.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-mvc-connector.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-mvc-jsp.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-mvc.jar!/" />
+      <root url="jar://C:/javalibs/glassfish5/glassfish/modules/jersey-server.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
