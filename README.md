@@ -2,7 +2,7 @@
 
 <details>
   <summary>Applications</summary>
-![](./images/glassfish.png)
+![glassfish.png](images/glassfish.png)
 </details>
 
 <details>
