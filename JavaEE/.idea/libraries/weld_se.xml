@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="weld-se">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../CDI Project/lib/weld-se.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
