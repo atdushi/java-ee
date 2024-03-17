@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.prime.com.tr/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+      
+      <h:head>
+      	<title>Your shopping cart</title>
+      </h:head>
+      
+      <h:body>
+      	<h1>Your Cart</h1>
+      	
+      	<h:form>
+
+			   <p>Please choose from the available products:</p>
+			   <ul>
+			   <ui:repeat var="nextItem" value="#{shoppingCartBean.allAvailableProducts}">				   
+	      		   <h:commandLink action="#{shoppingCartBean.addProduct(nextItem)}">
+						<li>#{nextItem}</li>
+         		   </h:commandLink>      		         		   
+			   </ui:repeat>
+			   </ul>
+			 
+				<h2>Your Current Cart:</h2>
+				<h:dataTable value="${shoppingCartBean.allItems}" var="item">
+				    <h:column>
+        				#{item}
+    				</h:column>
+				</h:dataTable>
+				
+				<h:commandLink action="#{shoppingCartBean.checkout}">
+					Go to checkout
+				</h:commandLink>
+      	
+		</h:form>
+      	      		
+      </h:body>          
+</html>      

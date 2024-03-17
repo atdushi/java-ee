@@ -12,7 +12,7 @@
     <h1>All Employees</h1>
 
     <h:form>
-        <h:dataTable value="#{allEmployeesPageBean.allEmployees}"
+        <h:dataTable value="#{employeeManagementImplementation.allEmployees}"
                      var="employee"
                      binding="#{allEmployeesPageBean.dataTableOld}">
             <h:column>
@@ -35,7 +35,7 @@
             </h:column>
         </h:dataTable>
 
-        <p:dataTable value="#{allEmployeesPageBean.allEmployees}"
+        <p:dataTable value="#{employeeManagementImplementation.allEmployees}"
                      var="employee"
                      binding="#{allEmployeesPageBean.dataTable}">
 
@@ -68,7 +68,7 @@
 
     </h:form>
 
-    <ui:repeat value="#{allEmployeesPageBean.allEmployees}" var="value">
+    <ui:repeat value="#{employeeManagementImplementation.allEmployees}" var="value">
         #{value} <br/>
     </ui:repeat>
 

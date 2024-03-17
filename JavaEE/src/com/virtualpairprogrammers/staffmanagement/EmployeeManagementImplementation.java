@@ -10,6 +10,7 @@ import javax.annotation.Resource;
 import javax.annotation.security.RolesAllowed;
 import javax.ejb.*;
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.List;
 @Stateless
 @WebService(name = "employeeManagementWebService")
 @RolesAllowed("admin")
+@Named("employeeManagementImplementation")  // для референса из CDI
 public class EmployeeManagementImplementation
         implements EmployeeManagementServiceRemote, EmployeeManagementServiceLocal {
 

@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.prime.com.tr/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+      
+      <h:head>
+      	<title>Confirm Order</title>
+      </h:head>
+      
+      <h:body>
+      	<h1>Confirm your order:</h1>
+      	
+      	<h:form>
+
+				<h2>Your Final Order:</h2>
+				<h:dataTable value="${shoppingCartBean.allItems}" var="item">
+				    <h:column>
+        				#{item}
+    				</h:column>
+				</h:dataTable>
+				
+				<h:commandButton value="Confirm Order" action="#{shoppingCartBean.finalizeOrder}"/>
+      	
+		</h:form>
+      	      		
+      </h:body>          
+</html>      

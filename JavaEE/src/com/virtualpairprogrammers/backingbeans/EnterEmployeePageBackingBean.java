@@ -25,7 +25,8 @@ public class EnterEmployeePageBackingBean
         try
         {
             employeeService.registerEmployee(newEmployee);
-            return "all-employees";
+//            return "all-employees";
+            return "all-employees.xhtml?faces-redirect=true";
         }
         catch (SystemUnavailableException e)
         {
