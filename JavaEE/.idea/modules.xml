@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/../CDI Project/CDI Project.iml" filepath="$PROJECT_DIR$/../CDI Project/CDI Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Conversations/Conversations.iml" filepath="$PROJECT_DIR$/../Conversations/Conversations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaEE.iml" filepath="$PROJECT_DIR$/.idea/JavaEE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Message Receiver/Message Receiver.iml" filepath="$PROJECT_DIR$/../Message Receiver/Message Receiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Message Sender/Message Sender.iml" filepath="$PROJECT_DIR$/../Message Sender/Message Sender.iml" />
       <module fileurl="file://$PROJECT_DIR$/../REST Client/REST Client.iml" filepath="$PROJECT_DIR$/../REST Client/REST Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/../WebserverClient/WebserverClient.iml" filepath="$PROJECT_DIR$/../WebserverClient/WebserverClient.iml" />
     </modules>
