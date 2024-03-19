@@ -15,7 +15,7 @@ public class MessageSender {
 
             connection = cf.createConnection();
 
-            Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+            Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE /*излишний параметр*/);
 
             MessageProducer messageProducer = session.createProducer(queue);
 

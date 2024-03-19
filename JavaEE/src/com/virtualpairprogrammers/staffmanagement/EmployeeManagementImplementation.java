@@ -11,6 +11,7 @@ import javax.annotation.security.RolesAllowed;
 import javax.ejb.*;
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.jms.*;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import java.util.List;
@@ -22,16 +23,23 @@ import java.util.List;
 public class EmployeeManagementImplementation
         implements EmployeeManagementServiceRemote, EmployeeManagementServiceLocal {
 
-    // Java EE >= 5 => DI container
+    // weld container - implementation of CDI
     @Inject
     @ProductionDao
     private EmployeeDataAccess dao;
 
-    @EJB
-    private ExternalPayrollSystem payrollSystem;
+    // Java EE >= 5 => DI container
+//    @EJB
+//    private ExternalPayrollSystem payrollSystem;
 
     @Resource
     private SessionContext glassfish;   // this object is often called ctx
+
+    @Resource(mappedName = "jms/EmployeeManagementQueue")
+    private Queue queue;
+
+    @Resource(mappedName = "jms/ConnectionFactory")
+    private ConnectionFactory connectionFactory;
 
     @Override
 //    @RolesAllowed("users")
@@ -54,7 +62,27 @@ public class EmployeeManagementImplementation
 //    @RolesAllowed("admin")
     public void registerEmployee(Employee newEmployee) throws SystemUnavailableException {
         dao.insert(newEmployee);
-        payrollSystem.enrollEmployee(newEmployee);
+
+        try
+        {
+            Connection connection = connectionFactory.createConnection();
+
+            Session session = connection.createSession(false, 0);
+
+            MessageProducer messageProducer = session.createProducer(queue);
+
+            MapMessage message = session.createMapMessage();
+            message.setString("employeeName", newEmployee.getFirstName() + " " + newEmployee.getSurname());
+            message.setString("employeeJobRole", newEmployee.getJobRole());
+            message.setInt("employeeSalary", newEmployee.getSalary());
+
+            messageProducer.send(message);
+            connection.close();
+        }
+        catch (JMSException e)
+        {
+            throw new SystemUnavailableException();
+        }
     }
 
     @Override

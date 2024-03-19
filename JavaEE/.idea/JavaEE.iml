@@ -41,15 +41,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/javalibs/db-derby-10.6.2.1-bin/lib/derbyclient.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="derbyclient" level="project" />
     <orderEntry type="library" name="jersey" level="project" />
     <orderEntry type="library" name="security-ee" level="project" />
     <orderEntry type="module-library">
@@ -61,5 +53,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="gf-client" level="project" />
   </component>
 </module>

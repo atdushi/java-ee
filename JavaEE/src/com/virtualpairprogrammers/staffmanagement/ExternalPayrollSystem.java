@@ -1,18 +1,23 @@
 package com.virtualpairprogrammers.staffmanagement;
 
-import com.virtualpairprogrammers.staffmanagement.domain.Employee;
+import javax.ejb.MessageDriven;
+import javax.jms.MapMessage;
+import javax.jms.Message;
+import javax.jms.MessageListener;
 
-import javax.ejb.Stateless;
+@MessageDriven(mappedName = "jms/EmployeeManagementQueue")
+public class ExternalPayrollSystem implements MessageListener {
+    @Override
+    public void onMessage(Message message) {
+        MapMessage msg = (MapMessage) message;
+        try {
+            String name = msg.getString("employeeName");
+            System.out.println("Employee has now been added");
 
-@Stateless
-public class ExternalPayrollSystem {
-    public void enrollEmployee(Employee newEmployee) throws SystemUnavailableException
-    {
-        if (Math.random() < 0.5)
-            throw new SystemUnavailableException();
-        else
-        {
-            // do some complex processing.
+            // улетит в DMQ ()
+//            throw new NullPointerException();
+        } catch (Exception e) {
+            throw new RuntimeException("Bad Message" + e);
         }
     }
 }
