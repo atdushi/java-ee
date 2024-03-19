@@ -14,7 +14,7 @@ public class ExternalPayrollSystem implements MessageListener {
             String name = msg.getString("employeeName");
             System.out.println("Employee has now been added");
 
-            // улетит в DMQ ()
+            // улетит в DMQ (mq.sys.dmq)
 //            throw new NullPointerException();
         } catch (Exception e) {
             throw new RuntimeException("Bad Message" + e);
