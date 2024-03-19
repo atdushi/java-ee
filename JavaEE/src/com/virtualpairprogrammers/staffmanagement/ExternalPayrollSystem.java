@@ -8,7 +8,7 @@ import javax.jms.Message;
 import javax.jms.MessageListener;
 
 @MessageDriven(mappedName = "jms/EmployeeManagementQueue",
-        messageListenerInterface = MessageListener.class,
+        messageListenerInterface = MessageListener.class, // // Java EE >= 5, потому что "throws SystemUnavailableException"
         activationConfig = {
                 @ActivationConfigProperty(propertyName = "endpointExceptionRedeliveryAttempts",
                         propertyValue = "10")
